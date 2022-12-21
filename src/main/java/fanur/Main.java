@@ -12,11 +12,11 @@ public class Main {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                int val;
+                int val = 0;
                 try {
                     val = Integer.parseInt(arr[i][j]);
                 } catch (Exception e) {
-                    val = 0;
+                    System.out.println(e.getMessage());
                 }
                 sum += val;
             }
